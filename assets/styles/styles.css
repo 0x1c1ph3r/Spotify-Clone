@@ -1,0 +1,451 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.divlr{
+    display: flex;
+    /* flex-direction: column; */
+    background-color: #000000;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* left div */
+.divl{
+    width: 350px;
+    /* padding-left: 15px;
+    padding-top: 10px; */
+    height: 100vh;
+    margin-top: 8px;
+    margin-left: 8px;
+    height: fit-content;
+    
+}
+.home-search{
+    padding: 20px;
+    height: 110px;
+    background-color:#121212;
+    border-radius: 10px;
+}
+.home{
+    margin-bottom: 10px;
+}
+.home,
+.search,
+.lib-icon{
+    display: flex;
+    padding: 5px;
+    font-weight: 550;
+    font-size:1.3rem ;
+}
+.home p{
+    margin-left: 20px;
+}
+
+.search p{
+    margin-left: 15px;
+    color: #e5e5e58d;
+}
+.search span{
+    color: #e5e5e58d;
+}
+.library-playlist{
+    height: calc(100vh - 140px);
+    background-color:#121212;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 10px;
+}
+.library{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    /* padding: 20px; */   
+}
+.lib-icon p,
+.lib-icon span,
+.lib-add span {
+    color: #e5e5e58d; 
+    
+}
+.lib-icon{
+    padding-left: 16px;
+}
+.lib p{
+    margin-left: 15px;
+} 
+.lib-add{
+    display: flex;
+    align-items: center;
+
+}
+.lib{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.create-playlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5px;
+    overflow-y: auto;
+    height: 180px;
+}
+.create-playlist::-webkit-scrollbar {
+    width: 10px;
+}
+
+.create-playlist::-webkit-scrollbar-track {
+    background: none;
+}
+
+.create-playlist::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 1px;
+}
+
+.create-playlist:hover::-webkit-scrollbar-thumb {
+    background: #717171;
+}
+.playlist-podcast{
+    background-color: #242424;
+    border-top-left-radius:5px ;
+    border-top-right-radius:5px ;
+    border-bottom-left-radius:4px ;
+    border-bottom-right-radius:4px ;
+    height: 200px;
+    padding: 15px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.h5{
+    font-size: 14px;
+    font-weight: 900;
+}
+.h6{
+    font-size: 12px;
+}
+.h5,
+.h6{
+    margin-bottom: 15px;
+}
+
+.create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    width: fit-content;
+    height: fit-content;
+    transition: transform 0.2s ease;
+}
+.create:hover{
+    transform: scale(1.05);
+}
+.create p{
+    color: #121212;
+    font-weight: 600 ;
+}
+
+.footer-container{
+    margin-top: 60px;
+}
+.footerl{
+    margin-top: 20px;
+    display: flex;
+    font-size: 10px;
+    padding-left: 20px;
+    
+}
+.footerl p{
+    padding-right: 15px;
+}
+.language-container{
+    padding-left: 15px;
+    padding-top: 30px;
+}
+.language{
+    width: fit-content;
+    padding: 8px;
+    display: flex;
+    border: 1px solid rgba(136, 136, 136, 0.496);
+    border-radius: 30px;
+}
+.language p{
+    margin-left: 5px;
+}
+
+
+/* right div */
+
+
+.divr{
+    width: calc(100vw - 350px);
+    /* margin-left: 350px; */
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 15px;
+    /* height: fit-content; */
+    overflow-y: hidden;
+    background-color:#121212;
+    border-radius: 10px;
+    height: auto;
+    padding-bottom: 5px;
+
+}
+.signup-header{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    background-color: rgb(18,18,18);
+    z-index: 3;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+.arrows,
+.signlog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.arrow-left,
+.arrow-right{
+    background-color: #050505;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.arrow-left{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.arrow-right{
+    padding-left: 6px;
+    padding-right: 3px;
+}
+.sign{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.log{
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.log p{
+    font-weight: 700;
+    color: #000000;
+}
+.music-div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom ,rgb(31,31,31),rgb(18,18,18));
+    z-index: 1;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    overflow-y: auto;
+}
+.music-div{
+    padding: 20px 20px;
+    color: #FFFFFF;
+    
+}
+.music-div::-webkit-scrollbar {
+    width: 10px;
+    height: 40px;
+}
+
+.music-div::-webkit-scrollbar-track {
+    background: none;
+}
+
+.music-div::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 1px;
+}
+
+.music-div:hover::-webkit-scrollbar-thumb {
+    background: #717171;
+}
+.stack-header{
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    font-size: 22px;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+.show-all:hover,
+.name:hover{
+    text-decoration: underline;
+}
+.music-box-container{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* min-width: 150px; */
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.music-boxes{
+    cursor: pointer;
+    /* width: 170px; */
+    width: 18%;
+    margin-right: 1.9%;
+    min-width: 170px;
+    height: 310px;
+    padding: 10px;
+    background: linear-gradient(to bottom ,rgb(21,21,21),rgb(23,23,23));
+    border-radius: 6px;
+    transition: background 2s linear;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+
+}
+.music-boxes:hover{
+    background: linear-gradient(to bottom ,rgb(36,36,36),rgb(34,34,34));
+}
+.music-img {
+    /* background: url(https://i.scdn.co/image/ab67706f00000002e6391ab695e3af9b295d27ef); */
+    height: 200px;
+    position: relative; 
+    border-radius: 5px;
+}
+.music-img img {
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+}
+.music-name{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.play {
+    position: absolute;
+    bottom: 25px;
+    right: 3px;
+    z-index: 100;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: rgb(30,215,96); 
+    transition: bottom .2s;
+}
+.music-boxes:hover .play{
+    bottom: 35px;
+}
+
+.play i {
+    position: absolute;
+    padding-left: 4px;
+    color: #000000;
+    font-size: 20px;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.music-name{
+    /* padding-top: 17PX; */
+    font-size: 15px;
+    font-weight: 800;
+}
+.music-details p{
+    padding-top: 12PX;
+    padding-bottom: 12PX;
+    /* margin-bottom: 12PX; */
+    font-size: 12px;
+}
+
+/* footer */
+
+.footer{
+    margin-top: 50px;
+    margin-left: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 0px;
+}
+.footer-links{
+    display: flex;
+    width: 54%;
+    justify-content: space-between;
+    height: auto;
+}
+.h1{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.links{
+    font-size: 14px;
+}
+.links p{
+    padding-top: 10px;
+    color: rgb(167,167,167);
+}
+.links p:hover{
+    text-decoration: underline;
+    color: rgb(255,255,255);
+}
+.footer-icons{
+    width: 15%;
+    margin-right: 40px;
+    display:flex ;
+    justify-content: space-between;
+    align-items:flex-start ;
+}
+.footer{
+    padding-bottom: 50px;
+}
+
+.fa-brands::before{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: grid;
+    place-items: center; 
+    background: rgb(41,41,41);
+}
+.fa-brands{
+    padding-right: 10px;
+}
+.fa-brands:hover::before{
+    background:rgba(130, 130, 130, 0.626)
+}
+.copyright{
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
