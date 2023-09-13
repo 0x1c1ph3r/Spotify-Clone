@@ -181,14 +181,20 @@
 }
 .language-container{
     padding-left: 15px;
-    padding-top: 30px;
+    padding-top: 30px; 
 }
+
 .language{
     width: fit-content;
     padding: 8px;
     display: flex;
     border: 1px solid rgba(136, 136, 136, 0.496);
     border-radius: 30px;
+    transition: transform 0.2s ease;
+}
+.language:hover{
+    transform: scale(1.05);
+
 }
 .language p{
     margin-left: 5px;
@@ -320,7 +326,7 @@
 .music-boxes{
     cursor: pointer;
     /* width: 170px; */
-    width: 18%;
+    width: 20%;
     margin-right: 1.9%;
     min-width: 170px;
     height: 310px;
